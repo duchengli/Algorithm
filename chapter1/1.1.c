@@ -7,7 +7,6 @@ int main()
     printf("%d\n", 5 * 6);
     printf("%d\n", 8 / 4);
     printf("%d\n", 8 / 5);
-    printf("%d\n", 8 / 5);
 
     return 0;
 }
