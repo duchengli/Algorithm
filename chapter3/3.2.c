@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-#define maxn 7
+#define maxn 105
 
 int a[maxn];
 int main()
@@ -11,17 +11,23 @@ int main()
     printf("start computer:\n");
     for (int i = 1; i <= k; i++)
     {
-        printf("%d\n", i);
-        for (int j = i; j <= n; j = j + i)
+        // printf("Step: %d\n", i);
+        for (int j = i - 1; j <= n - 1; j = j + i)
         {
-            printf("%d ", j);
+            // printf("%d ", j+1);
             a[j] = !a[j];
         }
-        printf("\n");
-        for (int i = 0; i <= maxn - 1; i++)
-        {
-            printf("%d ", a[i]);
-        }
-        printf("\n");
+        // printf("\n");
+
+        // printf("\n");
     }
+    for (int i = 0; i <= maxn - 1; i++)
+    {
+        // printf("%d ", a[i]);
+        if (a[i] == 1)
+        {
+            printf("%d ", i + 1);
+                }
+    }
+    printf("\n");
 }
