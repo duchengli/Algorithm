@@ -1,27 +1,22 @@
 #include <stdio.h>
 
-int getchar_test_v1();
-
+// int main()
+// {
+//     char s;
+//     while ((s = getchar()) != EOF)
+//     {
+//         // putchar(s);
+//         printf("%c", s);
+//     }
+//     return 0;
+// }
 int main()
 {
-    getchar_test_v1();
-}
+    char id[50];
+    printf("Please input your ID Number:\n");
+    scanf("%s", id);
+    printf("请确认身份证号(Y/N)\n");
+    char a = getchar();
+    printf("%d\n", a);
 
-int getchar_test_v1()
-{
-    printf("Input chars: ");
-    int ch = getchar();
-    putchar(ch);
-    printf("\n");
-}
-
-int getchar_test_v2()
-{
-    int ch;
-    printf("Input chars: ");
-    while ((ch = getchar()) != EOF)
-    {
-        putchar(ch);
-    }
-    printf("\n");
 }
