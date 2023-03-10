@@ -1,3 +1,5 @@
+// Use the scanf() function to get a single word as input, and use fgets() for multiple words.
+
 #include <stdio.h>
 
 int main()
