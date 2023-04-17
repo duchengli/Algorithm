@@ -27,6 +27,13 @@ int main()
     a = 15;
     b = 20;
     c = 8;
+    int sum = a + b + c;
+    int smallest = (a < b ? a : b) < c ? a : c;
+    int largest = (a < b ? b : a) < c ? c : b;
 
-    printf("%d\n", a < b ? a : b);
+    printf("smallest %d\n", (a < b ? a : b) < c ? a : c);
+    printf("middle %d\n", sum - smallest - largest);
+    printf("largest %d\n", (a < b ? b : a) < c ? c : b);
+
+    return 0;
 }
